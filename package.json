@@ -2,11 +2,6 @@
   "name": "hacky-easter-07-jigsaw",
   "version": "1.0.0",
   "description": "Solution for https://hackyeaster.hacking-lab.com/hackyeaster/challenge.html?id=7",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoeTheDave/hacky-easter-07-jigsaw.git"
@@ -16,15 +11,33 @@
     "node"
   ],
   "author": "Joe Davis",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JoeTheDave/hacky-easter-07-jigsaw/issues"
-  },
   "homepage": "https://github.com/JoeTheDave/hacky-easter-07-jigsaw#readme",
+  "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.6",
     "cli-progress": "^1.8.0",
+    "fs-exists-sync": "^0.1.0",
     "jimp": "^0.2.28",
+    "jss": "^9.8.3",
+    "jss-camel-case": "^6.1.0",
+    "jss-compose": "^5.0.0",
+    "jss-default-unit": "^8.0.2",
+    "jss-expand": "^5.3.0",
+    "jss-nested": "^6.0.1",
+    "jss-props-sort": "^6.0.0",
+    "jss-vendor-prefixer": "^8.0.0",
     "lodash": "^4.17.5",
-    "mathjs": "^4.1.0"
+    "mathjs": "^4.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-jss": "^8.5.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "img-analysis": "node src/imgAnalysis.js"
   }
 }
